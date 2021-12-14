@@ -9,6 +9,15 @@ module.exports = {
       port: 8545,
       network_id: '*',
     },
+    aurora: {
+      provider: function() {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          `https://testnet.aurora.dev/${process.env.AURORA_API_KEY}`
+        )
+      },
+      network_id: '1313161555',
+    },
     ropsten: {
       provider: function() {
         return new HDWalletProvider(
