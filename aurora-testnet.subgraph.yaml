@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Gravity
-    network: aurora
+    network: aurora-testnet
     source:
-      address: '0x0Dc149c1adC89768381564c33Fff92820F328Ca7'
+      address: '0x60971C652A540F00BCbE0eb5792B2c00E1221BdB'
       abi: Gravity
-      startBlock: 55295109
+      startBlock: 75237286
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

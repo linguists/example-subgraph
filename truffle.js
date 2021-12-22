@@ -13,9 +13,20 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           process.env.MNEMONIC,
-          `https://testnet.aurora.dev/${process.env.AURORA_API_KEY}`
+          `https://mainnet.aurora.dev`
         )
       },
+      gas: 1000000000,
+      network_id: '1313161554',
+    },
+    aurora_testnet: {
+      provider: function() {
+        return new HDWalletProvider(
+          process.env.MNEMONIC,
+          `https://testnet.aurora.dev`
+        )
+      },
+      gas: 1000000000,
       network_id: '1313161555',
     },
     ropsten: {
